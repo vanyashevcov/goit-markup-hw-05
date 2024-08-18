@@ -518,27 +518,26 @@ img {
     margin-bottom: 16px;
 }
 
-.subscribe-form {}
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
 
 .subscribe-label {}
 
-.subscribe-box {
-}
-
 .subscribe-input-email {
     width: 264px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    height: 40px;
+    border: 1px solid #fff;
     background-color: transparent;
-    padding: 8px 16px;
-    outline: 1px solid #fff;
-    font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     color: #fff;
-    margin-right: 24px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input-email::placeholder {
@@ -547,23 +546,25 @@ img {
 
 .subscribe-input-email:hover,
 .subscribe-input-email:focus {
-    outline: 1px solid #31d0aa;
+    border: 1px solid #31d0aa;
 }
 
 .subscribe-button {
-    display: inline-flex;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    font-weight: 500;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.64);
-    padding: 8px 24px;
-    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
     background-color: #4d5ae5;
     border: none;
-    cursor: pointer;
+    border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -574,6 +575,7 @@ img {
 
 .subscribe-icon {
     fill: #fff;
+    margin-left: 16px;
 }
 
 /* MODAL */
@@ -621,9 +623,14 @@ img {
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -676,17 +683,19 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
-    outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #2e2f42;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
 .form-input:focus {
-    border: 1px solid #4d5ae5;
+    border-color: #4D5AE5;
 }
 
 .form-icon {
@@ -718,8 +727,10 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #2e2f42;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea::placeholder {
@@ -728,7 +739,7 @@ img {
 
 .form-textarea:hover,
 .form-textarea:focus {
-    border: 1px solid #4d5ae5;
+    border-color: #4D5AE5;
 }
 
 .form-checkbox-container {
@@ -739,7 +750,7 @@ img {
 
 .form-checkbox-label {
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     cursor: pointer;
@@ -753,8 +764,9 @@ img {
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-checkbox-icon {
@@ -765,7 +777,7 @@ img {
 .form-input-checkbox:checked+.form-checkbox-label>.form-checkbox-span {
     border: transparent;
     background-color: #404bbf;
-    fill: transparent;
+    fill: #F4F4FD;
 }
 
 .form-checkbox-link {
@@ -775,6 +787,7 @@ img {
 }
 
 .form-send-btn {
+    min-width: 169px;
     display: block;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;

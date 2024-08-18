@@ -368,16 +368,15 @@
             <div class="subscribe-box">
                 <p class="subscribe--text">Subscribe</p>
                 <form class="subscribe-form">
-                    <label class="subscribe-label" for="user-subscribe"></label>
-                    <div class="subscribe-box">
+                    <label class="subscribe-label" for="user-subscribe">
                         <input class="subscribe-input-email" type="email" name="user-email" id="user-subscribe"
                             placeholder="E-mail">
-                        <button type="submit" class="subscribe-button">Subscribe
-                            <svg class="subscribe-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
+                    </label>
+                    <button type="submit" class="subscribe-button">Subscribe
+                        <svg class="subscribe-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -395,8 +394,8 @@
                 <div class="form-input-container">
                     <label class="form-label" for="user-name">Name</label>
                     <div class="form-input-box">
-                        <input class="form-input" type="text" id="user-name" required>
-                        <svg class="form-icon" width="18" height="18">
+                        <input class="form-input" type="text" name="user-name" id="user-name" required>
+                        <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-user"></use>
                         </svg>
                     </div>
@@ -404,8 +403,8 @@
                 <div class="form-input-container">
                     <label class="form-label" for="user-phone">Phone</label>
                     <div class="form-input-box">
-                        <input class="form-input" type="tel" id="user-phone" required>
-                        <svg class="form-icon" width="18" height="18">
+                        <input class="form-input" type="tel" name="user-phone" id="user-phone" required>
+                        <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
@@ -413,8 +412,8 @@
                 <div class="form-input-container">
                     <label class="form-label" for="user-email">Email</label>
                     <div class="form-input-box">
-                        <input class="form-input" type="email" id="user-email" required>
-                        <svg class="form-icon" width="18" height="18">
+                        <input class="form-input" type="email" name="user-email" id="user-email" required>
+                        <svg class="form-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
@@ -425,8 +424,13 @@
                         placeholder="Text input"></textarea>
                 </div>
                 <div class="form-checkbox-container">
-                    <input class="form-input-checkbox visually-hidden" type="checkbox" name="user-checkbox" id="user-checkbox">
-                    <label class="form-checkbox-label" for="user-checkbox"><span class="form-checkbox-span"><svg class="form-checkbox-icon" width="10" height="8"><use href="./images/icons.svg#icon-click"></use></svg></span>I accept the terms and conditions of the <a class="form-checkbox-link" href="#">Privacy Policy</a></label>
+                    <input class="form-input-checkbox visually-hidden" type="checkbox" name="user-privacy"
+                    id="user-privacy" value="true">
+                    <label class="form-checkbox-label" for="user-privacy"><span class="form-checkbox-span"><svg
+                                class="form-checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-click"></use>
+                            </svg></span>I accept the terms and conditions of the <a class="form-checkbox-link"
+                            href="#">Privacy Policy</a></label>
                 </div>
                 <button class="form-send-btn" type="submit">Send</button>
             </form>
