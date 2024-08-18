@@ -467,9 +467,7 @@ img {
     max-width: 264px
 }
 
-.footer-social-media {
-    margin-right: 80px;
-}
+.footer-social-media {}
 
 .footer-social-text {
     font-weight: 500;
@@ -507,10 +505,11 @@ img {
     fill: #f4f4fd;
 }
 
-.subscribe-form {}
+.subscribe-box {
+    margin-left: auto;
+}
 
-.subscribe-label {
-    display: block;
+.subscribe--text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -519,10 +518,11 @@ img {
     margin-bottom: 16px;
 }
 
+.subscribe-form {}
+
+.subscribe-label {}
+
 .subscribe-box {
-    display: flex;
-    gap: 24px;
-    align-items: center;
 }
 
 .subscribe-input-email {
@@ -538,22 +538,28 @@ img {
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
+    margin-right: 24px;
 }
 
 .subscribe-input-email::placeholder {
     color: #fff;
 }
 
-
+.subscribe-input-email:hover,
+.subscribe-input-email:focus {
+    outline: 1px solid #31d0aa;
+}
 
 .subscribe-button {
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.64);
-    padding: 8px 64px 8px 24px;
+    padding: 8px 24px;
     border-radius: 4px;
     background-color: #4d5ae5;
     border: none;
@@ -563,16 +569,11 @@ img {
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 
 .subscribe-icon {
-    position: absolute;
     fill: #fff;
-    opacity: 1;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
 }
 
 /* MODAL */
@@ -731,7 +732,7 @@ img {
 }
 
 .form-checkbox-container {
-    margin-bottom: 24px;    
+    margin-bottom: 24px;
 }
 
 .form-input-checkbox {}

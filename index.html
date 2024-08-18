@@ -42,7 +42,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -365,24 +365,27 @@
                     </li>
                 </ul>
             </div>
-            <form class="subscribe-form">
-                <label class="subscribe-label" for="user-subscribe">Subscribe</label>
-                <div class="subscribe-box">
-                    <input class="subscribe-input-email" type="email" name="user-email" id="user-subscribe"
-                        placeholder="E-mail">
-                    <button type="submit" class="subscribe-button">Subscribe
-                        <svg class="subscribe-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+            <div class="subscribe-box">
+                <p class="subscribe--text">Subscribe</p>
+                <form class="subscribe-form">
+                    <label class="subscribe-label" for="user-subscribe"></label>
+                    <div class="subscribe-box">
+                        <input class="subscribe-input-email" type="email" name="user-email" id="user-subscribe"
+                            placeholder="E-mail">
+                        <button type="submit" class="subscribe-button">Subscribe
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal-click-btn">
+            <button type="button" class="modal-click-btn" data-modal-close>
                 <svg class="modal-click-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -430,6 +433,7 @@
         </div>
     </div>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
