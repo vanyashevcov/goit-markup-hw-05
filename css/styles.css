@@ -530,6 +530,7 @@ img {
     height: 40px;
     border: 1px solid #fff;
     background-color: transparent;
+    outline: none;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
